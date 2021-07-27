@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="header">
+    <div class="ttl">SORTING<br>VISUALIZER</div>
+    <div class="ctrls">
+        <div class="hd1">
+            <div  id="newArray">
+                <button type="button" class="newArray">New Array</button>
+            </div>
+            <div id="input">
+                <div id="size">Size:
+                    <input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
+                </div>
+                <div id="speed">Speed:
+                    <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+                </div>
+            </div>
+        </div>
+        <div class="sort-btns">
+            <div><button type="button" class="bubbleSort">Bubble Sort</button></div>
+            <div><button type="button" class="selectionSort">Selection Sort</button></div>
+            <div><button type="button" class="insertionSort">Insertion Sort</button></div>
+            <div><button type="button" class="quickSort">Quick Sort</button></div>
+            <div><button type="button" class="mergeSort">Merge Sort</button></div>
+        </div>
+    </div>       
+</div>
+<body class="p-3 mb-2 bg-dark text-white">
+    
+    <div id="bars" class="flex-container"></div>
+
+    <script src="js_files/sorting.js"></script>
+    <script src="js_files/bubble.js"></script>
+    <script src="js_files/insertion.js"></script>
+    <script src="js_files/merge.js"></script>
+    <script src="js_files/quick.js"></script>
+    <script src="js_files/selection.js"></script>
+</body>
+</html>
